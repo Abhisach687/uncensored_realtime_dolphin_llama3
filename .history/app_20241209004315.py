@@ -216,13 +216,12 @@ def fetch_info_via_scraping(query: str) -> str:
 
 def fetch_real_time_info(query: str) -> str:
     """
-    Attempts to fetch real-time information using web scraping first; falls back to RSS feeds if necessary.
+    Attempts to fetch real-time information using RSS feeds first; falls back to web scraping if necessary.
     """
-    scraping_result = fetch_info_via_scraping(query)
-    if "An error occurred" in scraping_result or "No relevant information found." in scraping_result:
-        return fetch_info_from_rss(query)
-    return scraping_result
-
+    rss_result = fetch_info_from_rss(query)
+    if "An error occurred" in rss_result or "No relevant information found." in rss_result:
+        return fetch_info_via_scraping(query)
+    return rss_result
 
 def should_fetch_real_time_data(query: str) -> bool:
     """

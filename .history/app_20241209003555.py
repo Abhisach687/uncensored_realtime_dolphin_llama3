@@ -44,109 +44,7 @@ def fetch_info_from_rss(query: str) -> str:
         "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
         "https://www.theguardian.com/world/rss",
         "https://www.reuters.com/rssFeed/worldNews",
-        "https://www.foxnews.com/about/rss",
-        "https://www.nbcnews.com/id/3032091/device/rss/rss.xml",
-        "https://www.cbsnews.com/latest/rss/main",
-        "https://www.usatoday.com/rss/news",
-        "https://www.npr.org/rss/rss.php?id=1001",
-        "https://www.politico.com/rss/politics08.xml",
-        "https://www.huffpost.com/section/front-page/feed",
-        "https://www.latimes.com/world-nation/rss2.0.xml",
-        "https://www.wsj.com/xml/rss/3_7085.xml",
-        "https://www.chicagotribune.com/arcio/rss/category/news",
-        "https://www.boston.com/tag/news/feed",
-        "https://www.sfgate.com/bayarea/feed",
-        "https://www.miamiherald.com/news/local/rss",
-        "https://www.dallasnews.com/news/rss",
-        "https://www.denverpost.com/feed",
-        "https://www.seattletimes.com/nation-world/feed",
-        "https://www.startribune.com/local/index.rss2",
-        "https://www.azcentral.com/arcio/rss/category/news",
-        "https://www.oregonlive.com/news/rss",
-        "https://www.tampabay.com/feed",
-        "https://www.freep.com/arcio/rss/category/news",
-        "https://www.cleveland.com/news/rss",
-        "https://www.kansascity.com/news/local/rss",
-        "https://www.nola.com/news/rss",
-        "https://www.baltimoresun.com/news/rss",
-        "https://www.sltrib.com/feed",
-        "https://www.indystar.com/arcio/rss/category/news",
-        "https://www.tennessean.com/arcio/rss/category/news",
-        "https://www.courier-journal.com/arcio/rss/category/news",
-        "https://www.desmoinesregister.com/arcio/rss/category/news",
-        "https://www.jsonline.com/arcio/rss/category/news",
-        "https://www.oklahoman.com/news/local/rss",
-        "https://www.omaha.com/news/local/rss",
-        "https://www.abqjournal.com/feed",
-        "https://www.lasvegassun.com/rss",
-        "https://www.houstonchronicle.com/local/feed",
-        "https://www.philly.com/arcio/rss/category/news",
-        "https://www.sacbee.com/news/local/rss",
-        "https://www.charlotteobserver.com/news/local/rss",
-        "https://www.sun-sentinel.com/news/rss",
-        "https://www.orlandosentinel.com/news/rss",
-        "https://www.sandiegouniontribune.com/news/rss",
-        "https://www.stltoday.com/news/local/rss",
-        "https://www.star-telegram.com/news/local/rss",
-        "https://www.dispatch.com/arcio/rss/category/news",
-        "https://www.cincinnati.com/arcio/rss/category/news",
-        "https://www.twincities.com/feed",
-        "https://www.mercurynews.com/feed",
-        "https://www.dailynews.com/feed",
-        "https://www.eastbaytimes.com/feed",
-        "https://www.ocregister.com/feed",
-        "https://www.presstelegram.com/feed",
-        "https://www.dailybreeze.com/feed",
-        "https://www.pasadenastarnews.com/feed",
-        "https://www.sgvtribune.com/feed",
-        "https://www.whittierdailynews.com/feed",
-        "https://www.dailybulletin.com/feed",
-        "https://www.pe.com/feed",
-        "https://www.sbsun.com/feed",
-        "https://www.redlandsdailyfacts.com/feed",
-        "https://www.dailycamera.com/feed",
-        "https://www.timescall.com/feed",
-        "https://www.reporterherald.com/feed",
-        "https://www.greeleytribune.com/feed",
-        "https://www.dailynews.com/feed",
-        "https://www.dailybreeze.com/feed",
-        "https://www.presstelegram.com/feed",
-        "https://www.dailybulletin.com/feed",
-        "https://www.pe.com/feed",
-        "https://www.sbsun.com/feed",
-        "https://www.redlandsdailyfacts.com/feed",
-        "https://www.dailycamera.com/feed",
-        "https://www.timescall.com/feed",
-        "https://www.reporterherald.com/feed",
-        "https://www.greeleytribune.com/feed",
-        "https://www.denverpost.com/feed",
-        "https://www.sltrib.com/feed",
-        "https://www.deseret.com/utah/rss",
-        "https://www.idahostatesman.com/news/local/rss",
-        "https://www.spokesman.com/rss",
-        "https://www.seattletimes.com/nation-world/feed",
-        "https://www.oregonlive.com/news/rss",
-        "https://www.sacbee.com/news/local/rss",
-        "https://www.sfchronicle.com/bayarea/feed",
-        "https://www.latimes.com/world-nation/rss2.0.xml",
-        "https://www.sandiegouniontribune.com/news/rss",
-        "https://www.azcentral.com/arcio/rss/category/news",
-        "https://www.abqjournal.com/feed",
-        "https://www.elpasotimes.com/arcio/rss/category/news",
-        "https://www.dallasnews.com/news/rss",
-        "https://www.houstonchronicle.com/local/feed",
-        "https://www.expressnews.com/news/local/feed",
-        "https://www.statesman.com/arcio/rss/category/news",
-        "https://www.star-telegram.com/news/local/rss",
-        "https://www.kansascity.com/news/local/rss",
-        "https://www.omaha.com/news/local/rss",
-        "https://www.oklahoman.com/news/local/rss",
-        "https://www.arkansasonline.com/rss/headlines/news",
-        "https://www.tennessean.com/arcio/rss/category/news",
-        "https://www.courier-journal.com/arcio/rss/category/news",
-        "https://www.indystar.com/arcio/rss/category/news",
-        "https://www.desmoinesregister.com/arcio/rss/category/news",
-        "https://www.stltoday.com/news/local/rss",
+        # Add more RSS feeds as needed
     ]
     try:
         for rss_url in rss_feeds:
@@ -163,11 +61,6 @@ def fetch_info_from_rss(query: str) -> str:
     except Exception as e:
         return f"An error occurred while fetching data: {e}"
 
-import requests
-from bs4 import BeautifulSoup
-import random
-import time
-
 def fetch_info_via_scraping(query: str) -> str:
     """
     Fetches the latest information related to the query using web scraping from multiple search engines.
@@ -175,9 +68,6 @@ def fetch_info_via_scraping(query: str) -> str:
     search_engines = [
         ("https://www.bing.com/search?q=", "li", "b_algo"),
         ("https://search.yahoo.com/search?p=", "div", "dd algo algo-sr Sr"),
-        ("https://www.google.com/search?q=", "div", "g"),
-        ("https://duckduckgo.com/html/?q=", "div", "result"),
-        ("https://search.brave.com/search?q=", "div", "snippet"),
         # Add more search engines as needed
     ]
     headers_list = [
@@ -186,9 +76,6 @@ def fetch_info_via_scraping(query: str) -> str:
         },
         {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
-        },
-        {
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36"
         },
         # Add more headers as needed
     ]
@@ -199,30 +86,24 @@ def fetch_info_via_scraping(query: str) -> str:
             response = requests.get(search_url, headers=headers)
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
-            results = soup.find_all(tag, class_=class_name)
-            for result in results:
-                link_tag = result.find('a', href=True)
-                if link_tag and 'href' in link_tag.attrs:
-                    title = link_tag.text
-                    link = link_tag['href']
-                    if link.startswith('/url?q='):
-                        link = link.split('/url?q=')[1].split('&')[0]
-                    return f"{title}: {link}"
+            result = soup.find(tag, class_=class_name)
+            if result:
+                title = result.find('a').text
+                link = result.find('a')['href']
+                return f"{title}: {link}"
             time.sleep(random.uniform(1, 3))  # Random delay to avoid detection
         return "No relevant information found."
     except Exception as e:
         return f"An error occurred while fetching data: {e}"
 
-
 def fetch_real_time_info(query: str) -> str:
     """
-    Attempts to fetch real-time information using web scraping first; falls back to RSS feeds if necessary.
+    Attempts to fetch real-time information using RSS feeds first; falls back to web scraping if necessary.
     """
-    scraping_result = fetch_info_via_scraping(query)
-    if "An error occurred" in scraping_result or "No relevant information found." in scraping_result:
-        return fetch_info_from_rss(query)
-    return scraping_result
-
+    rss_result = fetch_info_from_rss(query)
+    if "An error occurred" in rss_result or "No relevant information found." in rss_result:
+        return fetch_info_via_scraping(query)
+    return rss_result
 
 def should_fetch_real_time_data(query: str) -> bool:
     """
